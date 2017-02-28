@@ -48,9 +48,8 @@ In linux is:
 ### 2.2.4. Run
     Right click: tests folder | Run 'tests'
 # 3. Change the PHP Version
+If you want to use other version of PHP it's as easy as follow the steps:
 - Edit Dockerfile
 - Select a valid version of PHP from [Docker Hub](https://hub.docker.com/_/php/)
 - Follow the "Prepare setup" steps
 - Validate the composer.json to verify all the requisites are satisfied.
-
-    
