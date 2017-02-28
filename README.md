@@ -22,7 +22,7 @@
 ## 2.1. From command line
     docker run -v YOUR_PROJECT_FULLPATH/:/opt/project my-php ./vendor/bin/phpunit
 ## 2.2. From PHPStorm
-### 2.2.1. Configure Server
+### 2.2.1. Configure docker
 Follow the instructions according your [operating system](https://blog.jetbrains.com/phpstorm/2015/10/docker-support-in-phpstorm/)
 
 In linux is:
