@@ -18,19 +18,34 @@
     docker build -t my-php .
 ## 1.2. Install the composer dependencies
     docker run -v YOUR_PROJECT_FULLPATH/:/opt/project my-php composer install
+or in Linux/Mac:
+
+    docker run -v $(pwd):/opt/project my-php composer install
+    
 # 2. Run the tests
 ## 2.1. From command line
     docker run -v YOUR_PROJECT_FULLPATH/:/opt/project my-php ./vendor/bin/phpunit
+or in Linux/Mac:
+
+    docker run -v $(pwd):/opt/project my-php ./vendor/bin/phpunit
 ## 2.2. From PHPStorm
 ### 2.2.1. Configure docker
 Follow the instructions according your [operating system](https://blog.jetbrains.com/phpstorm/2015/10/docker-support-in-phpstorm/)
 
 In linux is:
 
+    Open: Preferences
     Click: Build, execution, deployment | Docker
     Click: +
     Write: API Url: unix:///var/run/docker.sock
     Write: Docker compose executable: /usr/local/bin/docker-compose 
+
+In Mac is:
+
+    Open: Preferences
+    Click: Build, execution, deployment | Docker
+    Click: +
+    Click: Docker for Mac
 ### 2.2.2. Configure Interpreter
     Click: Languages & Frameworks | PHP 
     Click: CLI Interpreter | ...
@@ -45,6 +60,7 @@ In linux is:
     Select: Cli interpreter: Docker PHP 7.1.2
     Click: PHP Unit library: Use composer autoloader
     Write: Path to script: vendor/autoloader.php
+    Write: Default configuration file: phpunit.xml.dist
 ### 2.2.4. Run
     Right click: tests folder | Run 'tests'
 # 3. Change the PHP Version
