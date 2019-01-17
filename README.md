@@ -1,6 +1,9 @@
 # PHP and PHPUnit Kata Bootstrap
 
 ## TL;DR
+
+    git clone https://github.com/CodiumTeam/php-kata-bootstrap
+    cd php-kata-bootstrap
 I already have installed PHP 7 and composer
 
     make dependencies
