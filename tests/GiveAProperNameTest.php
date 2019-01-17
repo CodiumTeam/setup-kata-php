@@ -1,5 +1,6 @@
 <?php
-namespace LuisRovirosa;
+namespace Katas\Tests;
+use Katas\GiveAProperName;
 use PHPUnit\Framework\TestCase;
 
 class GiveAProperNameTest extends TestCase

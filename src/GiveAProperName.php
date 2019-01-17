@@ -1,5 +1,5 @@
 <?php
-namespace LuisRovirosa;
+namespace Katas;
 
 class GiveAProperName
 {
