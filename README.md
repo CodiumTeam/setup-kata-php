@@ -1,16 +1,16 @@
 # PHP and PHPUnit Kata Bootstrap
-
+1 minute setup to start practicing a kata 
 ## TL;DR
 
     git clone https://github.com/CodiumTeam/php-kata-bootstrap
     cd php-kata-bootstrap
-I already have installed PHP 7 and composer
+First option: I already have installed PHP 7 and composer
 
     make dependencies
     make tests
     make coverage
 
-I already have installed docker
+Second option: I already have installed docker
 
     make docker-build
     make docker-tests
@@ -41,12 +41,12 @@ I already have installed docker
     make dependencies
     
 # 2. Tests
-## Command line with docker
+## 2.1. Command line with docker
     make docker-tests
-## Command line without docker
+## 2.2. Command line without docker
     make tests
-## PHPStorm with docker
-### Configure docker
+## 2.3. PHPStorm with docker
+### 2.3.1. Configure docker
 Follow the instructions according your [operating system](https://blog.jetbrains.com/phpstorm/2015/10/docker-support-in-phpstorm/)
 
 In linux is:
@@ -63,7 +63,7 @@ In Mac is:
     Click: Build, execution, deployment | Docker
     Click: +
     Click: Docker for Mac
-### Configure Interpreter
+### 2.3.2. Configure Interpreter
     Click: Languages & Frameworks | PHP 
     Click: CLI Interpreter | ...
     Click: + | Remote
@@ -71,22 +71,22 @@ In Mac is:
     Select: Remote | Docker
     Write: Image name: php-docker-bootstrap
     Write: General executanble: php
-### Configure PHPUnit
+### 2.3.3. Configure PHPUnit
     Click: Languages & Frameworks | PHP | PHPUnit 
     Click: + | By Remote Interpreter
     Select: Cli interpreter: Docker PHP 7.2
     Click: PHP Unit library: Use composer autoloader
     Write: Path to script: vendor/autoloader.php
     Write: Default configuration file: phpunit.xml.dist
-### Run
+### 2.3.4. Run
     Right click: tests folder | Run 'tests'
 
 # 3. Code coverage
-## Command line with docker
+## 3.1. Command line with docker
     make docker-coverage
-## Command line without docker
+## 3.2. Command line without docker
     make coverage
-##  PHPStorm 
+##  3.3. PHPStorm 
     Right click: tests folder | Run 'tests with Coverage'
 # 4. Use another PHP Version
 If you want to use other version of PHP it's as easy as follow the steps:
