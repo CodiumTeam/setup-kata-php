@@ -33,10 +33,10 @@ Second option: I already have installed docker
 - [PhpStorm](https://www.jetbrains.com/phpstorm/download) with docker support (>= 2016.3) Optional
 
 # 1. Prepare the setup
-## With docker
+## 1.1. With docker
     make docker-build
 
-## Without docker
+## 1.2. Without docker
 
     make dependencies
     
