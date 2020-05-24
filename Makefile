@@ -6,19 +6,19 @@ dependencies:
 	composer install
 .PHONY: tests
 tests:
-	./vendor/bin/phpunit
+	./vendor/bin/phpunit --color=always
 coverage:
 	./vendor/bin/phpunit --coverage-text
 
 # Docker commands
 docker-build:
 	docker build -t php-docker-bootstrap .
-	@docker run -v $(shell pwd):/opt/project php-docker-bootstrap make dependencies
+	@docker run --rm -v ${PWD}:/opt/project php-docker-bootstrap make dependencies
 
 docker-tests:
-	@docker run -v $(shell pwd):/opt/project php-docker-bootstrap make tests
+	@docker run --rm -v ${PWD}:/opt/project php-docker-bootstrap make tests
 docker-coverage:
-	@docker run -v $(shell pwd):/opt/project php-docker-bootstrap make coverage
+	@docker run --rm -v ${PWD}:/opt/project php-docker-bootstrap make coverage
 
 define HELP
 # Local commands

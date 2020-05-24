@@ -4,7 +4,7 @@
 
     git clone https://github.com/CodiumTeam/php-kata-bootstrap
     cd php-kata-bootstrap
-First option: I already have installed PHP 7 and composer
+First option: I already have installed PHP 7.4 and composer
 
     make dependencies
     make tests
@@ -23,8 +23,8 @@ Second option: I already have installed docker
 - Tutorial to run the tests inside PhpStorm
  
 ## Content
-- PHP 7.2
-- PHPUnit 7 (Compatible with PHP 7.1, 7.2 and 7.3)
+- PHP 7.4
+- PHPUnit 9 (Compatible with PHP 7.3 and 7.4)
 - First PHPUnit test
 - Phpstorm settings
 

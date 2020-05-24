@@ -1,10 +1,11 @@
 <?php
+
 namespace Katas;
 
 class GiveAProperName
 {
 
-    public function giveMeAProperName()
+    public function giveMeAProperName(): bool
     {
         return true;
     }
