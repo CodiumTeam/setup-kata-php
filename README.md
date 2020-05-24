@@ -66,18 +66,17 @@ In Mac is:
 ### 2.3.2. Configure Interpreter
     Click: Languages & Frameworks | PHP 
     Click: CLI Interpreter | ...
-    Click: + | Remote
-    Write: Name: Docker PHP 7.2
+    Click: + | From Docker, Vagrant...
     Select: Remote | Docker
     Write: Image name: php-docker-bootstrap
-    Write: General executanble: php
+    Write: Php interpreter: php
+    Write: Name: Docker PHP 7.4
 ### 2.3.3. Configure PHPUnit
-    Click: Languages & Frameworks | PHP | PHPUnit 
+    Click: Languages & Frameworks | PHP | Test Frameworks 
     Click: + | By Remote Interpreter
-    Select: Cli interpreter: Docker PHP 7.2
+    Select: Cli interpreter: Docker PHP 7.4
     Click: PHP Unit library: Use composer autoloader
     Write: Path to script: vendor/autoloader.php
-    Write: Default configuration file: phpunit.xml.dist
 ### 2.3.4. Run
     Right click: tests folder | Run 'tests'
 
