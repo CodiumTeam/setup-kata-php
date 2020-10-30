@@ -1,8 +1,8 @@
 <?php
 
-namespace Katas\Tests;
+namespace Kata\Tests;
 
-use Katas\GiveAProperName;
+use Kata\GiveAProperName;
 use PHPUnit\Framework\TestCase;
 
 class GiveAProperNameTest extends TestCase
@@ -11,6 +11,9 @@ class GiveAProperNameTest extends TestCase
     public function please_rename_me_or_delete_me(): void
     {
         $myObject = new GiveAProperName();
-        $this->assertTrue($myObject->giveMeAProperName());
+
+        $result = $myObject->giveMeAProperName();
+
+        self::assertEquals(true, $result);
     }
 }

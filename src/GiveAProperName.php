@@ -1,6 +1,6 @@
 <?php
 
-namespace Katas;
+namespace Kata;
 
 class GiveAProperName
 {
