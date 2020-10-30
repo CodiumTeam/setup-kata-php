@@ -1,12 +1,14 @@
+.PHONY: tests dependencies coverage docker-build docker-tests docker-coverage
 default:
 	@printf "$$HELP"
 
 # Local commands
 dependencies:
 	composer install
-.PHONY: tests
+
 tests:
 	./vendor/bin/phpunit --color=always
+
 coverage:
 	./vendor/bin/phpunit --coverage-text
 
@@ -17,6 +19,7 @@ docker-build:
 
 docker-tests:
 	@docker run --rm -v ${PWD}:/opt/project php-docker-bootstrap make tests
+
 docker-coverage:
 	@docker run --rm -v ${PWD}:/opt/project php-docker-bootstrap make coverage
 
